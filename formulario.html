@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StarleInternet | Registro de clientes</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="encabezado">
+    <div class="contenedor barra">
+      <a class="marca" href="index.html">Starle<span>Internet</span></a>
+      <nav aria-label="Navegación principal">
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a class="activo" href="formulario.html">Registro de clientes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor seccion">
+    <div class="cabecera-formulario">
+      <p class="etiqueta">Área de clientes</p>
+      <h1>Registro de nuevo cliente</h1>
+      <p>Completa los datos principales para mantener organizada la información del servicio.</p>
+    </div>
+
+    <form class="formulario" action="#" method="post">
+      <div class="grupo-campos">
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan" required>
+        </div>
+        <div class="campo">
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" name="apellido" placeholder="Ej. Pérez" required>
+        </div>
+        <div class="campo">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="809-000-0000">
+        </div>
+        <div class="campo">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" placeholder="cliente@correo.com">
+        </div>
+        <div class="campo campo-completo">
+          <label for="direccion">Dirección</label>
+          <input type="text" id="direccion" name="direccion" placeholder="Sector, calle y número">
+        </div>
+        <div class="campo">
+          <label for="plan">Plan contratado</label>
+          <select id="plan" name="plan">
+            <option value="">Seleccione un plan</option>
+            <option value="basico">Básico</option>
+            <option value="estandar">Estándar</option>
+            <option value="premium">Premium</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="fecha">Fecha de registro</label>
+          <input type="date" id="fecha" name="fecha">
+        </div>
+      </div>
+      <div class="acciones">
+        <a class="boton boton-secundario" href="index.html">Volver al inicio</a>
+        <button class="boton" type="submit">Guardar cliente</button>
+      </div>
+      <p class="nota">Maquetación académica: el formulario todavía no almacena información.</p>
+    </form>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor"><p>© 2026 StarleInternet · Propuesta académica de desarrollo web</p></div>
+  </footer>
+</body>
+</html>
